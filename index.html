@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Proyecto final curriculum</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+   <!--Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Inicio</a>
+            </div>
+            <nav id="Nav" class="responsive">
+                <ul>
+                    <li><a href="#Inicio" onclick="seleccionar()">Presentación</a></li>
+                    <li><a href="#infopersonal" onclick="seleccionar()">Información personal</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#experiencia" onclick="seleccionar()">Experiencia</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--INICIO-->
+    <section id="Inicio" class="Inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="Imagenes/Foto de perfil.png" alt="No se pudo cargar la imagen">
+            </div>
+        <h1>Jonathan Maldonado</h1>
+        <h2>Estudiante Argentina Programa 4.0</h2>
+        <div class="redes">
+            <a href="https://www.facebook.com/yonibanfield/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/yonibanfield/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jonathan-emmanuel-maldonado-0a9ba7257/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        </div>
+    </section>
+
+    <!--INFORMACION PERSONAL-->
+    <section id="infopersonal" class="infopersonal">
+        <div class="contenido-seccion">
+            <h2>Información personal</h2>
+            <p>Mi nombre es Jonathan Maldonado, tengo 32 años y vivo en Banfield. Este es mi proyecto final integrador de la segunda etapa de Argentina Programa 4.0</p>
+            
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de nacimiento</strong>
+                            25/08/1990
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            1138303398
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            yonibanfield@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Barilari 2577, Banfield
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Conocimientos y habilidades</h3>
+                    <div class="contenedor-habilidades">
+                        <div class="habilidades">
+                            <i class="fa-solid fa-car"></i>
+                            <span>Licencia autos</span>
+                        </div>
+                        <div class="habilidades">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>Licencia motos</span>
+                        </div>
+                        <div class="habilidades">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Ingles</span>
+                        </div>
+                        <div class="habilidades">
+                            <i class="fa-solid fa-braille"></i>
+                            <span>Braille</span>
+                        </div>
+                        <div class="habilidades">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>Windows</span>
+                        </div>
+                        <div class="habilidades">
+                            <i class="fa-solid fa-file"></i>
+                            <span>Office</span>
+                        </div>
+                        <div class="habilidades">
+                            <i class="fa-solid fa-image"></i>
+                            <span>Pothoshop</span>
+                        </div>
+                        <div class="habilidades">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Internet</span>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a download="CV" href="CV.pdf"></a>
+                <a download="CV" href="CV.pdf">Descargar CV</a> <i class="fa-solid fa-download"></i>               
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--EXPERIENCIA-->
+    <section id="experiencia" class="Experiencia">
+        <div class="contenido-seccion">
+            <h1>Experiencia</h1>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h2>Educación</h2>
+                    <div class="item izq">
+                        <h4>Programación</h4>
+                        <span class="casa">Argentina Programa 4.0</span>
+                        <span class="fecha">2022 - Actual</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Estudios terciarios</h4>
+                        <span class="casa">ISFD N°1 Abuelas de Plaza de Mayo</span>
+                        <span class="carrera">Profesorado en Educación Especial</span>
+                        <span class="fecha">2022 - Actual</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Estudios secundarios</h4>
+                        <span class="casa">E.E.T N°3 Islas Malvinas</span>
+                        <span class="carrera">Técnico Informático</span>
+                        <span class="fecha">2006 - 2008</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col derecha">
+                    <h2>Trabajos</h2>
+                <div class="item der">
+                    <h4>Administrativo</h4>
+                    <span class="casa">Drogueria Orien</span>
+                    <span class="fecha">2015 - 2019</span>                    
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Técnico instalador</h4>
+                    <span class="casa">Montajes y Fibras S.R.L</span>
+                    <span class="fecha">2015 - 2015</span>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Ayudante de cocina</h4>
+                    <span class="casa">Beto's</span>
+                    <span class="fecha">2013 - 2015</span>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Ayudante de pasteleria</h4>
+                    <span class="casa">A La Parrilla</span>
+                    <span class="fecha">2011 - 2012</span>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <!--CONTACTO-->
+    <form id="contacto" class="contacto" action="https://formspree.io/f/xknaoqej"
+    method="POST">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Nombre" name="Nombre">
+                    <input type="text" placeholder="Teléfono" name="Teléfono">
+                    <input type="text" placeholder="Correo electrónico" name="correo">
+                    <input type="text" placeholder="Asunto" name="asunto">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" ></textarea>
+                    <button>
+                        Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                 <div class="col">
+                <img src="Imagenes/ubicacion.jpg" alt="No se pudo cagar la imagen">
+                </div>
+            </div>            
+        </div>
+    </form>
+    <!--FOOTER-->
+    <footer>
+        <a href="#Inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
